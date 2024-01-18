@@ -23,7 +23,7 @@ const Feed = () => {
 
     const [searchText, setSearchText] = useState('');
     const [searchTimeout, setSearchTimeout] = useState(null);
-    const [searchResults, setSearchResults] = useState([])
+    const [searchResults, setSearchResults] = useState([]);
 
     const fetchPosts = async () => {
         const response = await fetch('/api/prompt');
