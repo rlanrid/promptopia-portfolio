@@ -32,6 +32,10 @@ const Feed = () => {
         setAllPosts(data);
     }
 
+    useEffect(() => {
+        fetchPosts();
+    }, [])
+
     const filterPrompts = (searchtext) => {
         const regex = new RegExp(searchtext, "i"); // 'i' flag for case-insensitive search
         return allPosts.filter(
@@ -60,11 +64,6 @@ const Feed = () => {
         const searchResult = filterPrompts(tagName);
         setSearchResults(searchResult);
     }
-
-    useEffect(() => {
-
-        fetchPosts();
-    }, [])
 
     return (
         <section className='feed'>
