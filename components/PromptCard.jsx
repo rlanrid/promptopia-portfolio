@@ -59,7 +59,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit,
                             : '/assets/icon/copy.svg'}
                         width={12}
                         height={12}
-                        className="rounded-full bg-black"
+                        className="rounded-full bg-red"
                     />
                 </div>
             </div>
