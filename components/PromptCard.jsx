@@ -54,12 +54,12 @@ const PromptCard = ({ post, handleTagClick, handleEdit,
 
                 <div className="copy_btn" onClick={handleCopy}>
                     <Image
-                        src={copied === post.prompt
-                            ? '/assets/icon/tick.svg'
-                            : '/assets/icon/copy.svg'}
+                        src={
+                            copied === post.prompt ? "/assets/icons/tick.svg" : "/assets/icons/copy.svg"
+                        }
+                        alt={copied === post.prompt ? "tick_icon" : "copy_icon"}
                         width={12}
                         height={12}
-                        className="rounded-full bg-red"
                     />
                 </div>
             </div>
